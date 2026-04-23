@@ -16,7 +16,7 @@ public class Review {
     @Column(columnDefinition = "TEXT", nullable = false)
     private String reviewText;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "book_id", nullable = false)
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private Book book;
