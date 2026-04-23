@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosClient = axios.create({
-    baseURL: 'https://haibazo-test-b1.onrender.com',
+    baseURL: 'https://haibazo-test-b1.onrender.com/api',
     headers: {
         'Content-Type': 'application/json',
     },
